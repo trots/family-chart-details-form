@@ -4,6 +4,8 @@ This example shows how to implement the details form for your family tree based 
 
 Use the details form to add a biography for a person.
 
+[Demo](https://trots.github.io/family-chart-details-form/).
+
 ## Get started
 
 1. Clone this repository.
