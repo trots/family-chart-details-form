@@ -1,0 +1,136 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.f3 {
+  margin: auto;
+  position: relative;
+}
+
+.f3 .cursor-pointer {
+  cursor: pointer;
+}
+.f3 svg.main_svg {
+  width: 100%;
+  height: 100%;
+  background-color: #3b5560;
+  color: #3b5560;
+}
+.f3 svg.main_svg text {
+  fill: currentColor;
+}
+.f3 rect.card-female, .f3 .card-female .card-body-rect, .f3 .card-female .text-overflow-mask {
+  fill: lightpink;
+}
+.f3 rect.card-male, .f3 .card-male .card-body-rect, .f3 .card-male .text-overflow-mask {
+  fill: lightblue;
+}
+.f3 .card-genderless .card-body-rect, .f3 .card-genderless .text-overflow-mask {
+  fill: lightgray;
+}
+.f3 .card_add .card-body-rect {
+  fill: #3b5560;
+  stroke-width: 4px;
+  stroke: #fff;
+  cursor: pointer;
+}
+.f3 g.card_add text {
+  fill: #fff;
+}
+.f3 .card-main {
+  stroke: #000;
+}
+.f3 .card_family_tree rect {
+  transition: 0.3s;
+}
+.f3 .card_family_tree:hover rect {
+  transform: scale(1.1);
+}
+.f3 .card_add_relative {
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+}
+.f3 .card_add_relative circle {
+  fill: rgba(0, 0, 0, 0);
+}
+.f3 .card_add_relative:hover {
+  color: black;
+}
+.f3 .card_edit.pencil_icon {
+  color: #fff;
+  transition: 0.3s;
+}
+.f3 .card_edit.pencil_icon:hover {
+  color: black;
+}
+.f3 .card_break_link, .f3 .link_upper, .f3 .link_lower, .f3 .link_particles {
+  transform-origin: 50% 50%;
+  transition: 1s;
+}
+.f3 .card_break_link {
+  color: #fff;
+}
+.f3 .card_break_link.closed .link_upper {
+  transform: translate(-140.5px, 655.6px);
+}
+.f3 .card_break_link.closed .link_upper g {
+  transform: rotate(-58deg);
+}
+.f3 .card_break_link.closed .link_particles {
+  transform: scale(0);
+}
+.f3 .input-field input {
+  height: 2.5rem !important;
+}
+.f3 .input-field > label:not(.label-icon).active {
+  -webkit-transform: translateY(-8px) scale(0.8);
+  transform: translateY(-8px) scale(0.8);
+}
+
+#FamilyChart {
+  height: 100%;
+  width:100%;
+}
+
+#Overlay {
+  position: fixed;
+  display: none;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  color: white;
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  width: 50%;
+  min-width: 300px;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  font-size: 2vmax;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+#image {
+  text-align: center;
+}
+
+#content {
+}
